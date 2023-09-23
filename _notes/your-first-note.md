@@ -125,3 +125,42 @@ This digital garden template is free, open-source, and [available on GitHub here
 The easiest way to build your own digital garden based on this template is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
 
 Go forth, have fun, and learn new something every day! ✌️
+
+## 写作
+### [[精神分析百鬼图]]
+```dataview
+LIST FROM "05 Writings/01 Notes/百鬼图" or "05 Writings/02 Essays/百鬼图"
+SORT file.ctime DESC
+
+```
+### [[随愈而安|精神分析实践]]
+```dataview
+LIST FROM "05 Writings/01 Notes/精神分析实践" or "05 Writings/02 Essays/精神分析实践"
+SORT file.ctime DESC
+
+```
+### 临床笔记
+```dataview
+LIST FROM "05 Writings/01 Notes/临床笔记" or "05 Writings/02 Essays/临床笔记"
+SORT file.ctime DESC
+
+```
+### 工作流
+```dataview
+LIST FROM "05 Writings/01 Notes/工作流" or "05 Writings/02 Essays/工作流"
+SORT file.ctime DESC
+
+```
+## 最新笔记
+### [[Reading Log| 书籍]]
+```dataview
+LIST FROM "02 Input/Books/精神分析"
+SORT file.ctime DESC
+
+```
+## [[标签|常见名词]]
+```dataview 
+LIST rows.file.link FROM "03 Wiki"  
+GROUP BY classification 
+
+```
